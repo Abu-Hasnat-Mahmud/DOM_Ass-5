@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+
+    <!-- bootstrap link up -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <!-- main  -->
+    <main>
+        <!-- section  -->
+        <section class="row row-cols-2 mx-5 border-bottom my-4">
+            <!-- left side -->
+            <div class="col">
+                <img src="images/mac.png" class="w-75" alt="" srcset="">
+            </div>
+            <!-- right side -->
+            <div class="col">
+                <h1>Customize your Blue 14-inc iMac with M1 chip</h1>
+                <p>Apple M1 chip with 8-core CPU with 4 perfromance core and 4 efficiency core, 7-core GPU, and 16 core
+                    Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic
+                    Keyboard- US English</p>
+
+                <!-- extra memory part -->
+                <div class="my-4">
+                    <h5>Memory</h5>
+                    <button class="btn btn-outline-dark " id="btn-zero-memory">8GB unified memory</button>
+
+                    <button class="btn btn-outline-dark " id="btn-16-memory">16GB unified memory</button>
+
+                </div>
+
+                <!-- extra storage part  -->
+                <div class=" my-4">
+                    <h5>Storage</h5>
+                    <button class="btn btn-outline-dark " id="btn-zero-storage">256GB SSD storage</button>
+                    <button class="btn btn-outline-dark " id="btn-512-storage">512GB SSD storage</button>
+                    <button class="btn btn-outline-dark " id="btn-1TB-storage">1TB SSD storage</button>
+                </div>
+
+                <!-- deliver cost part -->
+                <div class=" my-4">
+                    <h5>Chose your Delivery option</h5>
+                    <button class="btn btn-outline-dark " id="btn-zero-delivery">Friday, Aug25 FREE Prime
+                        Delivery</button>
+
+                    <button class="btn btn-outline-dark " id="btn-20-delivery">Friday, Aug21 Delivery charge
+                        $20</button>
+                </div>
+
+                <!-- cost calculation -->
+                <div class=" my-4">
+                    <table class="table table-border">
+                        <tbody>
+                            <tr class="border-bottom">
+                                <td>Best Price</td>
+                                <td>$1299</td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td>Extra Memory Cost </td>
+                                <td>$<span id="memory-cost">0</span></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td>Extra Memory Cost </td>
+                                <td>$<span id="storage-cost">0</span></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td>Delivery charge</td>
+                                <td>$<span id="delivery-cost">0</span></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td>Total Price</td>
+                                <td>$<span id="sub-total">1299</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- promo code -->
+                <div class="my-3 row row-cols-1">
+                    <div class="col">
+                        <p>Apply Promo code</p>
+                        <input type="text" class=" form-control" id="input-promo">
+                        <button class="btn btn-danger" id="btn-promo">Apply</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- total amount -->
+        <h2 class="text-center">Total: $<span id="total-amount"></span></h2>
+    </main>
+    <!-- script add -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- custom js link -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
